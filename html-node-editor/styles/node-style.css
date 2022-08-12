@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+main {
+    padding: 10px;
+}
+
+node {
+    display: block;
+}
+
+node-head {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+node-head.selected {
+    background-color: lightblue;
+}
+
+.node-icon {
+    height: 1.1em;
+    margin-right: 5px;
+    pointer-events: none;
+}
+
+.node-name {
+    pointer-events: none;
+}
+
+.xpnd-node {
+    padding: 0px 2px;
+    margin-right: 5px;
+}
+
+.xpnd-node.hide {
+    display: none;
+}

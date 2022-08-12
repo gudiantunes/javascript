@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+:root {
+    --backgroundColor: whitesmoke;
+    --headerBG : lightyellow;
+    --footerBG : light
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: var(--headerBG);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
+}
+header > h1 {
+    margin-left: 10px;
+}
+
+nav.hide {
+    display: none;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    width: 95vw;
+    bottom: 0;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: lightpink;
+    box-shadow: 2px -2px 2px rgba(0, 0, 0, 0.336);
+}
+
+footer > button {
+    padding: 10px 30px;
+}
