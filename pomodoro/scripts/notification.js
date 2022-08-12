@@ -9,9 +9,23 @@ const testNotification = () => {
         notification.close();
     }, 10 * 1000);
 
-    // notification.addEventListener('click', () => {
-    //     window.open(window)
-    // });
+    notification.addEventListener('click', () => {
+        window.focus();
+    });
+}
+
+const restNotification = () => {
+    const notification = new Notification ('Time to rest, budy', {
+        body: 'Start the clock when ready to study again',
+    });
+
+    setTimeout(() => {
+        notification.close();
+    }, 10 * 1000);
+
+    notification.addEventListener('click', () => {
+        window.focus();
+    });
 }
 
 function requestPermission() {
@@ -29,7 +43,7 @@ function hasPermission () {
 
 function showTestNotification() {
     if (hasPermission()) {
-        testNotification();
+        restNotification();
     }
 }
 
