@@ -13,7 +13,7 @@ class Node {
     }
 
     createElement () {
-        let newNode = document.createElement('node');
+        let newNode = document.createElement('full-node');
         let newNodeHead = document.createElement('node-head');
         let newNodeBody = document.createElement('node-body');
         let btn = document.createElement('button');
@@ -57,5 +57,13 @@ class Node {
     }
 
 }
+
+
+class ListedNode {
+    constructor () {
+        
+    }
+}
+
 
 export { Node }

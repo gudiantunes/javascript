@@ -1,10 +1,17 @@
 @charset "UTF-8";
 
+:root {
+    --backgroundColor: #16017D;
+    --headerBG : #012E7D;
+    --footerBG : #040E66;
+    --buttonColor: #014873;
+}
+
 main {
     padding: 10px;
 }
 
-node {
+full-node {
     display: block;
 }
 
@@ -15,7 +22,7 @@ node-head {
 }
 
 node-head.selected {
-    background-color: lightblue;
+    background-color: var(--buttonColor);
 }
 
 .node-icon {

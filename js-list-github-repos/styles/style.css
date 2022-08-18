@@ -1,0 +1,13 @@
+
+dt {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+dd {
+    margin-left: 20px;
+}
+
+#loading.hide {
+    display: none;
+}

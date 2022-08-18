@@ -1,15 +1,18 @@
 @charset "UTF-8";
 
 :root {
-    --backgroundColor: whitesmoke;
-    --headerBG : lightyellow;
-    --footerBG : light
+    --backgroundColor: #16017D;
+    --headerBG : #012E7D;
+    --footerBG : #040E66;
+    --buttonColor: #014873;
 }
 
 
 * {
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -35,15 +38,60 @@ nav.hide {
 footer {
     display: flex;
     position: absolute;
-    width: 95vw;
+    width: 100vw;
     bottom: 0;
-    padding: 15px;
+    padding: 15px 0px;
     justify-content: space-around;
     align-items: flex-end;
-    background-color: lightpink;
+    background-color: var(--headerBG);
     box-shadow: 2px -2px 2px rgba(0, 0, 0, 0.336);
 }
 
 footer > button {
     padding: 10px 30px;
+    background-color: var(--buttonColor);
+    border-color: var(--backgroundColor);
+    font-weight: bolder;
+}
+
+#add-node-modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    box-sizing: border-box;
+    top: 13vh;
+    left: 5vw;
+    width: 90vw;
+    height: 75vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.281);
+    background-color: var(--headerBG);
+    padding: 20px;
+}
+
+#add-node-modal.hide {
+    display: none;
+}
+
+#search-node {
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.356);
+}
+
+#node-list {
+    height: 100%;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+#node-description {
+    width: 100%;
+    height: 130px;
+    align-self: flex-end;
+    background-color: var(--footerBG);
+    box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.356);
+    border-radius: 5px;
 }
