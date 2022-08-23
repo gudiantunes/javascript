@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --bg-color : #f6f6f6;
+    --color-1 : #49a6e9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    background-color: white;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.301);
+
+}
+
+#header-center {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+#header-center > h1 {
+    /* margin: auto; */
+    font-weight: 700;
+    font-size: 2em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.37);
+}
+
+#header-center > h1 > span {
+    color: var(--color-1);
+}
+
+#header-center a {
+    text-decoration: none;
+}
+
+#open-menu {
+    display: none;
+}
+
+nav > a {
+    margin: 0 0.5em;
+}
+
+nav > a:hover {
+    color: var(--color-1);
+}
+
+.social-icon {
+    width: 2em;
+    margin: 0 0.2em;
+    filter: invert(57%) sepia(68%) saturate(421%) hue-rotate(163deg) brightness(92%) contrast(99%);
+}
+
+.social-icon:hover {
+    filter: invert(39%) sepia(99%) saturate(1208%) hue-rotate(164deg) brightness(83%) contrast(101%);
+}
+
+main {
+    text-align: center;
+    margin-top: 2em;
+}
+
+main > p {
+    background-color: white;
+    display: inline-block;
+    padding: 0.4em 0.7em;
+    border: 2px solid var(--color-1);
+    border-radius: 1em;
+}
+
+
+#responsive-menu {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    #header-center > nav,
+    #header-center > #social {
+        display: none;
+    }
+
+    #responsive-menu {
+        flex-basis: 100%;
+        display: block;
+    }
+
+    #responsive-menu.hide {
+        display: none;
+    }
+    
+    #open-menu {
+        transition: all 0.5s ease-in-out;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: block;
+        filter: invert(57%) sepia(68%) saturate(421%) hue-rotate(163deg) brightness(92%) contrast(99%);
+    }
+    
+    #open-menu:hover {
+        transition: all 0.5s ease-in-out;
+        transform: rotate(90deg);
+        filter: invert(39%) sepia(99%) saturate(1208%) hue-rotate(164deg) brightness(83%) contrast(101%);
+    }
+
+    #responsive-menu {
+        list-style-type: none;
+        transition: all 0.2s ease-out;
+    }
+
+    #responsive-menu a {
+        display: block;
+        text-decoration: none;
+        color: darkblue;
+    }
+    
+    #responsive-menu li {
+        padding: 0.2em 1em;
+        transition: all 0.2s ease-out;
+    }
+
+    #responsive-menu li:hover {
+        background-color: var(--color-1);
+        padding-left: 2em;
+    }
+
+    #responsive-menu a:active {
+        color: white;
+    }
+}
