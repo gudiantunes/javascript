@@ -1,0 +1,25 @@
+.hello {
+  color: red;
+}
+
+.hello > img {
+  width: 100px;
+}
+
+.hello > button {
+  background-color: yellow;
+  margin-left: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  padding: 5px;
+}
+
+.hello > button:hover {
+  background-color: red;
+}
+
+.hello > button:active {
+  transition: none;
+  background-color: orange;
+}
